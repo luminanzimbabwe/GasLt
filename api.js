@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.137.1:8000/";
+const BASE_URL = "https://backend-luminan.onrender.com/";
 
 export const API = {
   // Admin Endpoints (fixed to match backend)
@@ -16,5 +16,5 @@ export const API = {
   ADMIN_SALES_VOLUME: BASE_URL + "api/admin/sales/volume/",
   ADMIN_UPDATE_GLOBAL_PRICE: BASE_URL + "admin/global-price/update/",
   // WebSocket for real-time driver tracking
-  WS_ADMIN_DRIVERS: "ws://192.168.137.1:8000/ws/admin/drivers/",
+  WS_ADMIN_DRIVERS: "wss://backend-luminan.onrender.com/ws/admin/drivers/",
 };
