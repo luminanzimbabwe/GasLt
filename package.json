@@ -15,7 +15,6 @@
     "@react-navigation/native-stack": "^7.3.27",
     "@react-navigation/stack": "^7.4.9",
     "@reduxjs/toolkit": "^2.9.0",
-    "@rnmapbox/maps": "^10.2.6",
     "axios": "^1.12.2",
     "dayjs": "^1.11.18",
     "expo": "^54.0.20",

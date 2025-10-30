@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   expo: {
     // === PROJECT IDENTITY ===
     name: "GasLT",
@@ -8,8 +8,8 @@ module.exports = {
     // === EAS CONFIGURATION ===
     extra: {
       eas: {
-        projectId: "f52bfa5e-6cd2-432b-8acb-2c132c3d19f2"
-      }
+        projectId: "f52bfa5e-6cd2-432b-8acb-2c132c3d19f2",
+      },
     },
 
     // === VERSION AND ENVIRONMENT ===
@@ -24,7 +24,7 @@ module.exports = {
     splash: {
       image: "./assets/splash-icon.png",
       resizeMode: "contain",
-      backgroundColor: "#ffffff"
+      backgroundColor: "#ffffff",
     },
 
     // === iOS CONFIGURATION ===
@@ -32,36 +32,35 @@ module.exports = {
       supportsTablet: true,
       bundleIdentifier: "com.gaslt",
       infoPlist: {
-        ITSAppUsesNonExemptEncryption: false
-      }
+        ITSAppUsesNonExemptEncryption: false,
+      },
     },
 
     // === ANDROID CONFIGURATION ===
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/adaptive-icon.png",
-        backgroundColor: "#ffffff"
+        backgroundColor: "#ffffff",
       },
-      package: "com.gaslt"
+      package: "com.gaslt",
     },
 
     // === WEB CONFIGURATION ===
     web: {
-      favicon: "./assets/favicon.png"
+      favicon: "./assets/favicon.png",
     },
 
     // === PLUGINS ===
     plugins: [
       "expo-asset",
-       "expo-font",
-       "@rnmapbox/maps"
+      "expo-font",
       [
         "expo-splash-screen",
         {
           backgroundColor: "#ffffff",
-          image: "./assets/splash-icon.png"
-        }
-      ]
-    ]
-  }
+          image: "./assets/splash-icon.png",
+        },
+      ],
+    ],
+  },
 };
