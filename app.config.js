@@ -53,6 +53,8 @@ module.exports = {
     // === PLUGINS ===
     plugins: [
       "expo-asset",
+       "expo-font",
+       "@rnmapbox/maps"
       [
         "expo-splash-screen",
         {
