@@ -268,26 +268,28 @@ Created: ${new Date(item.created_at).toLocaleString()}
         </View>
       </View>
 
-      <FlatList
-        data={filteredOrders}
-        keyExtractor={(item) => item._id}
-        renderItem={renderOrder}
-        refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={onRefresh}
-            tintColor={PRIMARY_COLOR}
-            progressBackgroundColor={theme.CARD_BG}
-          />
-        }
-        ListEmptyComponent={
-          <View style={styles.center}>
-            <Ionicons name="document-text-outline" size={48} color={theme.SUBTEXT} />
-            <Text style={[styles.empty, { color: theme.SUBTEXT }]}>No orders found.</Text>
-          </View>
-        }
-        contentContainerStyle={filteredOrders.length === 0 ? { flex: 1 } : {}}
-      />
+      <View style={{ flex: 1 }}>
+        <FlatList
+          data={filteredOrders}
+          keyExtractor={(item) => item._id}
+          renderItem={renderOrder}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+              tintColor={PRIMARY_COLOR}
+              progressBackgroundColor={theme.CARD_BG}
+            />
+          }
+          ListEmptyComponent={
+            <View style={styles.center}>
+              <Ionicons name="document-text-outline" size={48} color={theme.SUBTEXT} />
+              <Text style={[styles.empty, { color: theme.SUBTEXT }]}>No orders found.</Text>
+            </View>
+          }
+          contentContainerStyle={filteredOrders.length === 0 ? { flex: 1 } : { paddingBottom: 20 }}
+        />
+      </View>
 
       <Modal
         visible={modalVisible}
